@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>pic/R-C.jpg</file>
+        <file>pic/iss_21953_03290.jpg!ww7006</file>
+    </qresource>
+</RCC>
