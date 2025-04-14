@@ -104,8 +104,12 @@ compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_mapPhoto.cpp
 debug/qrc_mapPhoto.cpp: ../../mapPhoto.qrc \
 		D:/QT/6.7.3/mingw_64/bin/rcc.exe \
+		../../pic/osm_100-l-3-1-1-0.png \
 		../../pic/iss_21953_03290.jpg!ww7006 \
-		../../pic/R-C.jpg
+		../../pic/osm_100-l-3-1-0-1.png \
+		../../pic/osm_100-l-3-1-0-0.png \
+		../../pic/R-C.jpg \
+		../../pic/osm_100-l-3-1-1-1.png
 	D:\QT\6.7.3\mingw_64\bin\rcc.exe -name mapPhoto --no-zstd ..\..\mapPhoto.qrc -o debug\qrc_mapPhoto.cpp
 
 compiler_moc_predefs_make_all: debug/moc_predefs.h
@@ -320,7 +324,19 @@ debug/moc_mainwindow.cpp: ../../mainwindow.h \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/qpainterpath.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/QPixmap \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QWidget \
+		D:/QT/6.7.3/mingw_64/include/QtGui/QResizeEvent \
+		D:/QT/6.7.3/mingw_64/include/QtCore/QPoint \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QScrollBar \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qscrollbar.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/QPainterPath \
+		D:/QT/6.7.3/mingw_64/include/QtGui/QPen \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/QGraphicsPathItem \
 		debug/moc_predefs.h \
 		D:/QT/6.7.3/mingw_64/bin/moc.exe
@@ -547,7 +563,19 @@ debug/main.o: ../../main.cpp ../../mainwindow.h \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/qpainterpath.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/QPixmap \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QWidget \
+		D:/QT/6.7.3/mingw_64/include/QtGui/QResizeEvent \
+		D:/QT/6.7.3/mingw_64/include/QtCore/QPoint \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QScrollBar \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qscrollbar.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/QPainterPath \
+		D:/QT/6.7.3/mingw_64/include/QtGui/QPen \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/QGraphicsPathItem \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/QApplication \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/qapplication.h
@@ -756,7 +784,19 @@ debug/mainwindow.o: ../../mainwindow.cpp ../../mainwindow.h \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/qgraphicsitem.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/qpainterpath.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/QPixmap \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QVBoxLayout \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qboxlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qlayoutitem.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qgridlayout.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QWidget \
+		D:/QT/6.7.3/mingw_64/include/QtGui/QResizeEvent \
+		D:/QT/6.7.3/mingw_64/include/QtCore/QPoint \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/QScrollBar \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qscrollbar.h \
+		D:/QT/6.7.3/mingw_64/include/QtWidgets/qabstractslider.h \
 		D:/QT/6.7.3/mingw_64/include/QtGui/QPainterPath \
+		D:/QT/6.7.3/mingw_64/include/QtGui/QPen \
 		D:/QT/6.7.3/mingw_64/include/QtWidgets/QGraphicsPathItem
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\..\mainwindow.cpp
 

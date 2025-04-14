@@ -2,7 +2,6 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-
 #include <QGraphicsScene>
 #include <QGraphicsView>
 #include <QGraphicsPixmapItem>
@@ -14,6 +13,7 @@
 #include <QScrollBar>
 #include <QPainterPath>
 #include <QPen>
+#include <QColor>
 
 #include <QPainterPath>
 #include <QGraphicsPathItem>
@@ -68,11 +68,9 @@ protected:
         event->accept();
     }
 };
-
 class MainWindow : public QMainWindow
 {
     Q_OBJECT
-
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
@@ -80,8 +78,15 @@ private:
     customGraphicsView *v;
     QGraphicsScene s;
     QGraphicsPixmapItem* pix;
-    QPixmap* map;
-protected:
+    QPixmap* map1;
+    QPixmap* map2;
+    QPixmap* map3;
+    QPixmap* map4;
+    QGraphicsPixmapItem *item1,*item2,*item3,*item4;
+    QPainterPath path;
+    QGraphicsPathItem *pitem;
+    QColor color;
+    QPen pen;
     void resizeEvent(QResizeEvent *event)override
     {
         v->setGeometry(0,0,event->size().width(),event->size().height());
